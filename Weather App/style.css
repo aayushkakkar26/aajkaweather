@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #04332b;
+    
+    
+}
+
+.card{
+  width: 100%;
+  max-width: 500px;
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #fff;
+  margin: 90px auto 0;
+  border-radius: 20px;
+  padding: 45px 35px;
+  text-align: center;
+  
+}
+
+.search{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    width:60px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.search button img{
+    width : 30px
+}
+
+.icntxt{
+  display: flex;
+  flex-direction: column;
+  max-width: 421px;
+  align-items: center;
+}
+
+.weather{
+  display: none;
+}
+
+.weather-icon{
+  width:250px;
+  margin-top: 40px;
+ 
+}
+
+.weather h1{
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: 10px;
+
+} 
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    margin-top: 50px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+   
+    border-radius: 30px;
+    height: 200px;
+}
+
+
+
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+
+.col img{
+    width: 65px;
+    margin-right: 10px;
+}
+
+
+.humidity,.wind,.rise,.set{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.aqi{
+    margin-top: 20px;
+    border-radius: 30px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+.aqi img{
+    width:35px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    /* background-color: #ffffff; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.box-content img {
+    width: 50px;
+}
+
+.label,
+.value {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.label {
+    /* background-color: #f0f0f0; */
+    border-radius: 5px 5px 0 0;
+}
+
+
+.boxbrdr{
+    display: flex;
+    
+    height:80px;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width:100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+
+.error{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: bisque;
+    display: none;
+}
+
+
+
+
+@media  (max-width: 500px) {
+    
+  
+    .card {
+      width: 80%;
+      padding: 30px 20px;
+    }
+    
+    .search input {
+      font-size: 16px;
+      width: 30px;
+      height: 40px;
+    }
+
+    .search button{
+        width: 43px;
+        height: 40px;
+    }
+    .search button img{
+        width:20px;
+    }
+    .weather-icon{
+        width: 150px;
+
+    }
+    
+    .weather h1 {
+      font-size: 40px;
+    }
+  
+    .weather h2 {
+      font-size: 30px;
+    }
+  
+    .details {
+      height: auto;
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  
+    .col {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .col img {
+      width: 40px;
+    }
+  
+    .humidity,
+    .wind,
+    .rise,
+    .set {
+      font-size: 14px;
+    }
+  
+    .aqi {
+      height: 40px;
+    }
+  
+    .aqi img {
+      width: 25px;
+    }
+  
+    .box {
+      width: 45%;
+    }
+  
+    .box-content img {
+      width: 40px;
+    }
+  
+    .label,
+    .value {
+      font-size: 14px;
+    }
+  
+    .boxbrdr {
+      height: auto;
+      flex-direction: column;
+      margin-top: 10px;
+      padding-right: 70px;
+    }
+  }
+
+
+  /*  */
+
+  /*  */
+
+
+/*  */
+
+/*  */
+
+/*/
+
+/*  */
